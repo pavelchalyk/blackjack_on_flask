@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block header %}
+    Game is in progress
+	<br>
+	<br>
+{% endblock %}
+
+{% block content %}
+    Your cards: {{ user_cards }}
+	<br>
+    Actual score: {{ user_score }}
+	<br>
+	<table>
+		<td>
+			<tr>
+				<form action="/get_card" method="get">
+					<button type="submit" value="get_card">Get Card</button>
+				</form>
+			</tr>
+			<tr>
+				<form action="/stop" method="get">
+					<button type="submit" value="stop">Stop</button>
+				</form>
+			</tr>
+		</td>
+	</table>
+{% endblock %}
+{# vim: set filetype=jinja: #}

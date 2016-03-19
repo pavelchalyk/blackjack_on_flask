@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h2><b><u>BlackJack Game</u></b></h2>
+{% block header %}
+{% endblock %}
+
+{% block content %}
+	<form action="/start_game" method="get">
+		<button type="submit" value="Start game">Start Game</button>
+	</form>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+</body>
+</html>
